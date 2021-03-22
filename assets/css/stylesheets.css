@@ -1,0 +1,44 @@
+.navbar{
+    background-color: #46ACC2;
+    display: flex;
+    padding: 16px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.navItems{
+    display: flex;
+}
+
+.navToggle{
+    display: none;
+}
+
+.navbarLink{
+    padding-right: 8px;
+}
+
+.navRight{
+    margin-left: auto;
+}
+
+@media only screen and (max-width: 768px){
+    .navItems, .navbar{
+        flex-direction: column;
+    }
+    .navItems{
+        display: none;
+    }
+    .toggleShow{
+        display: flex;
+    }
+    .navToggle{
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+    }
+    .navRight{
+        margin-left: 0;
+    }
+}
